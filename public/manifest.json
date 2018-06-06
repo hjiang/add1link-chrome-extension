@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
 
-  "name": "Add-1-link Extension",
+  "name": "+1 link Extension",
   "description": "Add links to add1.link.",
-  "version": "0.0.1",
+  "version": "0.0.2",
 
   "browser_action": {
     "default_popup": "index.html",
