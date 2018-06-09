@@ -1,1 +1,1 @@
-This is the Chrome extension for [+1 link](https://add1.link).
+This is the Chrome and Firefox extension for [+1 link](https://add1.link).
