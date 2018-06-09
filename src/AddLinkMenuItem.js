@@ -39,11 +39,11 @@ class AddLinkMenuItem extends Component {
   onClick = () => {
     this.setState({ currentState: 'loading' });
     chrome.tabs.query({ currentWindow: true, active: true }, tabs => {
-      const url = tabs[0].url;
+      const { url, title } = tabs[0];
       const client = this.createApolloClient();
       client.mutate({
         mutation: SAVE_LINK_MUTATION,
-        variables: { url }
+        variables: { url, title }
       }).then(() => {
         this.setState({ currentState: 'success' });
         setTimeout(() => {
